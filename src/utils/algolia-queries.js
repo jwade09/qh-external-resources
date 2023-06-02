@@ -1,5 +1,8 @@
 const videoQuery = `{
-  allPrismicVideo(filter: {data: {category: {in: "Videos"}}}) {
+  allPrismicVideo(
+    filter: {data: {category: {in: "Videos"}}}
+    sort: {data: {date_created: ASC}}
+  ) {
     nodes {
       data {
         category
@@ -23,7 +26,8 @@ const videoQuery = `{
   }
 }`
 const solutionQuery = `{
-  allPrismicVideo(filter: {data: {category: {in: "Solution Overviews / Research"}}}) {
+  allPrismicVideo(filter: {data: {category: {in: "Solution Overviews / Research"}}}
+  sort: {data: {date_created: ASC}}) {
     nodes {
       data {
         category
