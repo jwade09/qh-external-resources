@@ -1,8 +1,6 @@
 const videoQuery = `{
   allPrismicVideo(
-    filter: {data: {category: {in: "Videos"}}}
-    sort: {data: {date_created: ASC}}
-  ) {
+    filter: {data: {category: {in: "Videos"}}}) {
     nodes {
       data {
         category
@@ -26,8 +24,31 @@ const videoQuery = `{
   }
 }`
 const solutionQuery = `{
-  allPrismicVideo(filter: {data: {category: {in: "Solution Overviews / Research"}}}
-  sort: {data: {date_created: ASC}}) {
+  allPrismicVideo(filter: {data: {category: {in: "Solution Overviews / Research"}}}) {
+    nodes {
+      data {
+        category
+        description {
+          richText
+          html
+        }
+        resource {
+          url
+        }
+        title {
+          text
+        }
+        date_created(formatString: "MMMM, YYYY")
+      }
+      id
+      internal {
+        contentDigest
+      }
+    }
+  }
+}`
+const ccsQuery = `{
+  allPrismicVideo(filter: {data: {category: {in: "Comprehensive Care Solutions"}}}) {
     nodes {
       data {
         category
