@@ -25,6 +25,12 @@ module.exports = {
         chunkSize: 1000,
       },
     },
+    {
+      resolve: '@mkitio/gatsby-theme-password-protect',
+      options: {
+        password: 'QuantumHealth' // delete or `undefined` to disable password protection
+      }
+    },
     "gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-no-index", {
     resolve: 'gatsby-source-filesystem',
     options: {
