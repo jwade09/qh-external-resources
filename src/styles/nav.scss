@@ -21,9 +21,13 @@ nav{
         background-color: #333;
         width: fit-content;
         border-radius: 10px;
+        transition: .2s;
         i{
             margin-right: 1rem;
             width: 1.5rem;
+        }
+        &:hover{
+            background-color: #000;
         }
     }
 }

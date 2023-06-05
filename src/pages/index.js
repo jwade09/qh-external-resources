@@ -68,6 +68,48 @@ const IndexPage = () => {
               <Hits hitComponent={SearchCard} />
               </IndexResults>
             </Index>
+            <Index indexName="CCS">
+              <IndexResults>
+              <h2 className="search-title" id="ccs">Comprehensive Care Solutions</h2>
+              <Hits hitComponent={SearchCard} />
+              </IndexResults>
+            </Index>
+            <Index indexName="White_paper">
+              <IndexResults>
+              <h2 className="search-title" id="paper">White Papers</h2>
+              <Hits hitComponent={SearchCard} />
+              </IndexResults>
+            </Index>
+            <Index indexName="Webinars">
+              <IndexResults>
+              <h2 className="search-title" id="webinars">Webinars</h2>
+              <Hits hitComponent={SearchCard} />
+              </IndexResults>
+            </Index>
+            <Index indexName="Case_studies">
+              <IndexResults>
+              <h2 className="search-title" id="case">Case Studies</h2>
+              <Hits hitComponent={SearchCard} />
+              </IndexResults>
+            </Index>
+            <Index indexName="Nav_insider">
+              <IndexResults>
+              <h2 className="search-title" id="insider">Navigation Insider</h2>
+              <Hits hitComponent={SearchCard} />
+              </IndexResults>
+            </Index>
+            <Index indexName="Landing_pages">
+              <IndexResults>
+              <h2 className="search-title" id="landing">Landing Pages</h2>
+              <Hits hitComponent={SearchCard} />
+              </IndexResults>
+            </Index>
+            <Index indexName="Member_stories">
+              <IndexResults>
+              <h2 className="search-title" id="member">Member Stories</h2>
+              <Hits hitComponent={SearchCard} />
+              </IndexResults>
+            </Index>
             </AllResults>
         </Results>
       </InstantSearch>
@@ -83,6 +125,7 @@ export const Head = () => {
     <>
       <title>External Resources</title>
       <script src="https://kit.fontawesome.com/ba4e68cc54.js" crossorigin="anonymous"></script>
+      <meta name="robots" content="noindex"></meta>
     </>
   )
 }

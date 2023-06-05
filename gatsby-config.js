@@ -25,7 +25,7 @@ module.exports = {
         chunkSize: 1000,
       },
     },
-    "gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+    "gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-no-index", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",

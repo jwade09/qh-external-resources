@@ -7,7 +7,7 @@ $grey: #324150;
 $light-blue: #F5FDFF;
 $teal: #44A9AE;
 $dark-teal: #008E92;
-$green: #96D01B;
+$green: #84bd00;
 $orange: #F87028;
 $purple: #9F4892;
 $light-grey: #f1f1f1;
@@ -28,6 +28,7 @@ $light-bluegrey: #f7faff;
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {

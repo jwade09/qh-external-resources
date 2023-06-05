@@ -19,6 +19,7 @@
     "gatsby": "^5.10.0",
     "gatsby-plugin-algolia": "^1.0.3",
     "gatsby-plugin-image": "^3.10.0",
+    "gatsby-plugin-no-index": "^1.0.2",
     "gatsby-plugin-sass": "^6.10.0",
     "gatsby-plugin-sharp": "^5.10.0",
     "gatsby-source-filesystem": "^5.10.0",
