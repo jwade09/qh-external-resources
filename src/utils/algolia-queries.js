@@ -22,6 +22,7 @@ const videoQuery = `{
       internal {
         contentDigest
       }
+      tags
     }
   }
 }`
@@ -47,6 +48,7 @@ const solutionQuery = `{
       internal {
         contentDigest
       }
+      tags
     }
   }
 }`
@@ -72,6 +74,7 @@ const ccsQuery = `{
       internal {
         contentDigest
       }
+      tags
     }
   }
 }`
@@ -97,6 +100,7 @@ const whitePaperQuery = `{
       internal {
         contentDigest
       }
+      tags
     }
   }
 }`
@@ -122,6 +126,7 @@ const webinarsQuery = `{
       internal {
         contentDigest
       }
+      tags
     }
   }
 }`
@@ -147,6 +152,7 @@ const caseQuery = `{
       internal {
         contentDigest
       }
+      tags
     }
   }
 }`
@@ -172,6 +178,7 @@ const navQuery = `{
       internal {
         contentDigest
       }
+      tags
     }
   }
 }`
@@ -197,6 +204,7 @@ const landQuery = `{
       internal {
         contentDigest
       }
+      tags
     }
   }
 }`
@@ -222,6 +230,7 @@ const memberQuery = `{
       internal {
         contentDigest
       }
+      tags
     }
   }
 }`

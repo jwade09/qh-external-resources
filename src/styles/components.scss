@@ -89,6 +89,10 @@
             font-size: 1.5rem;
             padding-top: 1rem;
             color: #999;
+            i{
+                margin-right: .5rem;
+                color: #ccc;
+            }
         }
         .disclaimer{
             color: #ca1818;
@@ -178,9 +182,10 @@
 }
 
 .Copied{
+    transition: all .2s;
     color: #fff !important;
     font-weight: bold;
-    background-color: $green !important;
+    background: linear-gradient(90deg, $dark-teal, $green);
 }
 
 
