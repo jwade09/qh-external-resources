@@ -84,7 +84,9 @@ aside{
         padding-left: 0;
     }
 }
-
+.max{
+    width: 100%;
+}
 .flex {
     display: flex;
 }
@@ -160,4 +162,8 @@ p {
 }
 .g-8{
     width: 78%;
+}
+
+.mb1{
+    margin-bottom: 1rem;
 }

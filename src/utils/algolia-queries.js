@@ -235,6 +235,27 @@ const memberQuery = `{
   }
 }`
 
+const playBookQuery = `{
+  allPrismicPlaybook {
+    nodes {
+      data {
+        description {
+          richText
+          html
+        }
+        title {
+          text
+        }
+      }
+      uid
+      id
+      internal {
+        contentDigest
+      }
+    }
+  }
+}`
+
 
 
 const queries = [
@@ -282,6 +303,11 @@ const queries = [
     query: memberQuery,
     transformer: ({ data }) => data.allPrismicVideo.nodes,
     indexName: 'Member_stories',
+  },
+  {
+    query: playBookQuery,
+    transformer: ({ data }) => data.allPrismicPlaybook.nodes,
+    indexName: 'Playbooks',
   },
   ]
 

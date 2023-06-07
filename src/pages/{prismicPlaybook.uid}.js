@@ -54,6 +54,7 @@ query bookQuery($id: String) {
           }
         }
       }
+      type
     }
   }
 `
@@ -61,10 +62,10 @@ query bookQuery($id: String) {
 const PlayBook = (props) => {
     console.log(props)
     return(
-        <Layout>
+        <Layout side={props.data.prismicPlaybook.type}>
             <section>
                 <div className="flex align-center">
-                    <div>
+                    <div className="pl">
                         <h1>{props.data.prismicPlaybook.data.title.text}</h1>
                         <PrismicRichText field={props.data.prismicPlaybook.data.description.richText} />
                     </div>

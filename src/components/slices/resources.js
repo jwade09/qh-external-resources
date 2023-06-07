@@ -5,7 +5,7 @@ import PlayCard from "../play-card";
 export const Resources = (props) => {
     
     return (
-        <>
+        <article className="res">
             <div className="pl">
                 <h2>{props.slice.primary.resource_title.text}</h2>
                 <PrismicRichText field={props.slice.primary.resource_description.richText} />
@@ -15,6 +15,6 @@ export const Resources = (props) => {
                 return <PlayCard title={card.resource.document.data.title.text} url={card.resource.document.data.resource.url} desc={card.resource.document.data.description.text} cat={card.resource.document.data.category} date={card.resource.document.data.date_created} />
             })}
             </div>
-        </>
+        </article>
     )
 }

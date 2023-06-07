@@ -116,7 +116,8 @@
             margin-top: 1rem;
             text-transform: uppercase;
             letter-spacing: 1px;
-            font-size: .9rem;
+            font-size: 1rem;
+            color: #999;
         }
 
         .desc {
@@ -162,8 +163,30 @@
         }
     }
 }
+.res{
+    border-radius: 1rem;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    background: linear-gradient(318deg, rgba(132,189,0,0.1) 0%, rgba(0,0,0,0) 70%);
+    &:nth-child(even){
+        background: linear-gradient(318deg, rgba(0,142,146,0.1) 0%, rgba(0,0,0,0) 70%);
+    }
+    .ais-Hits-list{
+        padding-bottom: 0;
+    }
+    h2{
+        padding: 0;
+    }
+}
+
 .pl{
     margin-bottom: 1rem;
+    h2{
+        margin-bottom: 1rem;
+    }
+    h1, h2, p{
+        max-width: 90ch;
+    }
 }
 
 .links a {
