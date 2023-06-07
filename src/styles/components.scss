@@ -109,6 +109,15 @@
                 color: maroon;
             }
         }
+        .cat{
+            padding-bottom: 0.5rem;
+            width: fit-content;
+            display: block;
+            margin-top: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: .9rem;
+        }
 
         .desc {
             margin: 0;
@@ -152,6 +161,9 @@
             width: 100%;
         }
     }
+}
+.pl{
+    margin-bottom: 1rem;
 }
 
 .links a {

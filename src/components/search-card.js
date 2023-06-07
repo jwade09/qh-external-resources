@@ -2,14 +2,14 @@ import * as React from "react"
 import { useState } from "react";
 
 const SearchCard = ({hit}) => {
-    console.log(hit.data.hide_disclaimer)
+    
     const [isCopy, setIsCopy] = useState('Copy link');
 
 
     const copy = () => {
         navigator.clipboard.writeText(hit.data.resource.url);
         setIsCopy('Copied');
-        setTimeout(() => { setIsCopy('Copy link'); }, 3000);
+        setTimeout(() => { setIsCopy('Copy link'); }, 2000);
     };  
 
     return (

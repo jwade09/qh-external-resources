@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@mkitio/gatsby-theme-password-protect": "^2.1.2",
+    "@prismicio/react": "^2.6.2",
     "algoliasearch": "^4.17.1",
     "gatsby": "^5.10.0",
     "gatsby-plugin-algolia": "^1.0.3",
