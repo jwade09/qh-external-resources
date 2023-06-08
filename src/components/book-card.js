@@ -11,7 +11,7 @@ const BookCard = ({hit}) => {
                     <span className="title">
                         {hit.data.title.text}
                         </span>
-                    <div className="desc" dangerouslySetInnerHTML={{ __html: hit.data.description.text }} />
+                    <div className="desc" dangerouslySetInnerHTML={{ __html: hit.data.description.html }} />
                     
                     
                 </div>
