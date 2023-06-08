@@ -1,9 +1,16 @@
 .header-img{
     max-width: 100%;
     width: 25rem;
+    margin-right: 4rem;
+    @media (max-width:$small) {
+        display: none;
+    }
 }
 .ais-SearchBox{
     margin: 5rem 0;
+    @media (max-width:$small) {
+        margin: 2rem 0;
+    }
     form{
         display: flex;
     }
@@ -163,8 +170,12 @@
             width: 100%;
         }
     }
-    @media (max-width:1440px) {
+    @media (max-width:$large) {
         width: 48%;
+    }
+    @media (max-width:$small) {
+        width: 100%;
+        margin: 0 0 3rem 0
     }
 }
 .res{

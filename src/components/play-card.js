@@ -21,7 +21,7 @@ const PlayCard = (props) => {
                         <span className="title">
                             {props.title}
                             </span>
-                        <div className="desc">{props.desc}</div>
+                        <p className="desc">{props.desc}</p>
                         {props.hide ? <div className="disclaimer flex align-center"><i class="fa-solid fa-circle-xmark"></i><span>Do not forward link externally. Share live with clients/prospects.</span></div> : ''}
                         <div className="date"><i class="fa-regular fa-calendar" /> {props.date}</div>
                         

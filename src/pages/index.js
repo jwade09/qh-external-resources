@@ -45,7 +45,7 @@ const IndexPage = () => {
       <section>
         <div className="flex align-center">
           <img className="header-img" src={headerImage} />
-          <div className="well">
+          <div>
           <h1>Resources</h1>
           <p>The marketing department continuously updates this site for any sales/marketing efforts. If something is missing, please reach out to the marketing department.</p>
           </div>

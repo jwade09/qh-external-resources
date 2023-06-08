@@ -6,9 +6,17 @@
     img{
         width: 50px;
         margin-right: 2rem;
+        @media (max-width:$medium) {
+            margin-right: 0;
+        }
     }
     &:hover{
         text-decoration: underline;
+    }
+    span{
+        @media (max-width:$medium) {
+            display: none;
+        }
     }
 }
 nav{
@@ -34,10 +42,23 @@ nav{
         i{
             margin-right: 1rem;
             width: 1.5rem;
+            @media (max-width:1440px) {
+               margin-right: 0;
+            }
+        }
+        span{
+            @media (max-width:$medium) {
+                display: none;
+            }
         }
         &:hover{
             background-color: #000;
             color: #fff;
         }
+    }
+    @media (max-width:$medium) {
+        align-items: center;
+        margin-top: 2rem;
+        padding-top: 2rem;
     }
 }
