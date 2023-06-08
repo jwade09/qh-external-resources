@@ -9,6 +9,9 @@
         @media (max-width:$medium) {
             margin-right: 0;
         }
+        @media (max-width:$small) {
+            width: 25px;
+        }
     }
     &:hover{
         text-decoration: underline;
@@ -17,6 +20,9 @@
         @media (max-width:$medium) {
             display: none;
         }
+    }
+    @media (max-width:$small) {
+        justify-content: center;
     }
 }
 nav{
