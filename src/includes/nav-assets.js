@@ -5,10 +5,10 @@ import { Link } from "gatsby";
 const NavAssets = () => {
     return (
         <>  
-            <div className="logo flex align-center"><img src={logo} /> Sales/Marketing</div>
+            <Link to="/" className="logo flex align-center"><img src={logo} alt="QH Logo" /> Sales/Marketing</Link>
             <nav className="flex col">
             <Link className="act mb1" to="/playbooks"><i class="fa-solid fa-book"></i> Playbooks</Link>
-            <Link className="act" to="/assets"><i class="fa-solid fa-folder-open"></i> Resources</Link>
+            <Link className="act" to="/"><i class="fa-solid fa-folder-open"></i> Resources</Link>
                 <a href="#videos"><i class="fa-solid fa-video"></i> Videos</a>
                 <a href="#solutions"><i class="fa-solid fa-flask"></i> Solution Overviews / Research</a>
                 <a href="#ccs"><i class="fa-solid fa-wand-magic-sparkles"></i> Comprehensive Care Solutions</a>

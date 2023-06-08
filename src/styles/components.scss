@@ -130,6 +130,7 @@
         p{
             margin: 0;
         }
+        
         &:after{
             content: "";
             height: 10px;
@@ -162,6 +163,9 @@
             width: 100%;
         }
     }
+    @media (max-width:1440px) {
+        width: 48%;
+    }
 }
 .res{
     border-radius: 1rem;
@@ -177,6 +181,10 @@
     h2{
         padding: 0;
     }
+}
+
+.f h2{
+    padding-top: 0;
 }
 
 .pl{

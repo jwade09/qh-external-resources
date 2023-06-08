@@ -3,15 +3,6 @@ import { useState } from "react";
 import { Link } from "gatsby";
 
 const BookCard = ({hit}) => {
-    
-    const [isCopy, setIsCopy] = useState('Copy link');
-
-
-    const copy = () => {
-        navigator.clipboard.writeText(hit.data.resource.url);
-        setIsCopy('Copied');
-        setTimeout(() => { setIsCopy('Copy link'); }, 2000);
-    };  
 
     return (
         <>
