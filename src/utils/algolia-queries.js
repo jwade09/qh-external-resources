@@ -15,7 +15,8 @@ const videoQuery = `{
         title {
           text
         }
-        date_created(formatString: "YYYY, MMMM")
+        date_created(formatString: "MMMM, YYYY")
+        date: date_created(formatString: "X")
         
       }
       id
@@ -23,6 +24,7 @@ const videoQuery = `{
         contentDigest
       }
       tags
+      
     }
   }
 }`
@@ -41,7 +43,8 @@ const solutionQuery = `{
         title {
           text
         }
-        date_created(formatString: "YYYY, MMMM")
+        date_created(formatString: "MMMM, YYYY")
+        date: date_created(formatString: "X")
         hide_disclaimer
       }
       id
@@ -49,6 +52,7 @@ const solutionQuery = `{
         contentDigest
       }
       tags
+      
     }
   }
 }`
@@ -67,7 +71,8 @@ const ccsQuery = `{
         title {
           text
         }
-        date_created(formatString: "YYYY, MMMM")
+        date_created(formatString: "MMMM, YYYY")
+        date: date_created(formatString: "X")
         hide_disclaimer
       }
       id
@@ -75,6 +80,7 @@ const ccsQuery = `{
         contentDigest
       }
       tags
+      
     }
   }
 }`
@@ -93,7 +99,8 @@ const whitePaperQuery = `{
         title {
           text
         }
-        date_created(formatString: "YYYY, MMMM")
+        date_created(formatString: "MMMM, YYYY")
+        date: date_created(formatString: "X")
         hide_disclaimer
       }
       id
@@ -101,6 +108,7 @@ const whitePaperQuery = `{
         contentDigest
       }
       tags
+      
     }
   }
 }`
@@ -119,7 +127,8 @@ const webinarsQuery = `{
         title {
           text
         }
-        date_created(formatString: "YYYY, MMMM")
+        date_created(formatString: "MMMM, YYYY")
+        date: date_created(formatString: "X")
         hide_disclaimer
       }
       id
@@ -127,6 +136,7 @@ const webinarsQuery = `{
         contentDigest
       }
       tags
+      
     }
   }
 }`
@@ -145,7 +155,8 @@ const caseQuery = `{
         title {
           text
         }
-        date_created(formatString: "YYYY, MMMM")
+        date_created(formatString: "MMMM, YYYY")
+        date: date_created(formatString: "X")
         hide_disclaimer
       }
       id
@@ -153,6 +164,7 @@ const caseQuery = `{
         contentDigest
       }
       tags
+      
     }
   }
 }`
@@ -171,7 +183,8 @@ const navQuery = `{
         title {
           text
         }
-        date_created(formatString: "YYYY, MMMM")
+        date_created(formatString: "MMMM, YYYY")
+        date: date_created(formatString: "X")
         hide_disclaimer
       }
       id
@@ -179,6 +192,7 @@ const navQuery = `{
         contentDigest
       }
       tags
+      
     }
   }
 }`
@@ -197,7 +211,8 @@ const landQuery = `{
         title {
           text
         }
-        date_created(formatString: "YYYY, MMMM")
+        date_created(formatString: "MMMM, YYYY")
+        date: date_created(formatString: "X")
         hide_disclaimer
       }
       id
@@ -205,6 +220,7 @@ const landQuery = `{
         contentDigest
       }
       tags
+      
     }
   }
 }`
@@ -223,7 +239,8 @@ const memberQuery = `{
         title {
           text
         }
-        date_created(formatString: "YYYY, MMMM")
+        date_created(formatString: "MMMM, YYYY")
+        date: date_created(formatString: "X")
         hide_disclaimer
       }
       id
@@ -231,6 +248,7 @@ const memberQuery = `{
         contentDigest
       }
       tags
+      
     }
   }
 }`
