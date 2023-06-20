@@ -15,7 +15,7 @@ const videoQuery = `{
         title {
           text
         }
-        date_created(formatString: "MMMM, YYYY")
+        date_created(formatString: "YYYY, MMMM")
         
       }
       id
@@ -41,7 +41,7 @@ const solutionQuery = `{
         title {
           text
         }
-        date_created(formatString: "MMMM, YYYY")
+        date_created(formatString: "YYYY, MMMM")
         hide_disclaimer
       }
       id
@@ -67,7 +67,7 @@ const ccsQuery = `{
         title {
           text
         }
-        date_created(formatString: "MMMM, YYYY")
+        date_created(formatString: "YYYY, MMMM")
         hide_disclaimer
       }
       id
@@ -93,7 +93,7 @@ const whitePaperQuery = `{
         title {
           text
         }
-        date_created(formatString: "MMMM, YYYY")
+        date_created(formatString: "YYYY, MMMM")
         hide_disclaimer
       }
       id
@@ -119,7 +119,7 @@ const webinarsQuery = `{
         title {
           text
         }
-        date_created(formatString: "MMMM, YYYY")
+        date_created(formatString: "YYYY, MMMM")
         hide_disclaimer
       }
       id
@@ -145,7 +145,7 @@ const caseQuery = `{
         title {
           text
         }
-        date_created(formatString: "MMMM, YYYY")
+        date_created(formatString: "YYYY, MMMM")
         hide_disclaimer
       }
       id
@@ -171,7 +171,7 @@ const navQuery = `{
         title {
           text
         }
-        date_created(formatString: "MMMM, YYYY")
+        date_created(formatString: "YYYY, MMMM")
         hide_disclaimer
       }
       id
@@ -197,7 +197,7 @@ const landQuery = `{
         title {
           text
         }
-        date_created(formatString: "MMMM, YYYY")
+        date_created(formatString: "YYYY, MMMM")
         hide_disclaimer
       }
       id
@@ -223,7 +223,7 @@ const memberQuery = `{
         title {
           text
         }
-        date_created(formatString: "MMMM, YYYY")
+        date_created(formatString: "YYYY, MMMM")
         hide_disclaimer
       }
       id
