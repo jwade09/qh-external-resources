@@ -17,7 +17,10 @@ const PlayCard = (props) => {
         
                 <div className="card">
                     <div className="card-content">
-                    <div className="cat">{props.cat}</div>
+                    <div className="flex">
+                        <div className="cat">{props.cat}</div>
+                        {props.new ? <div className="new">{props.new}</div> : ''}
+                    </div>
                         <span className="title">
                             {props.title}
                             </span>

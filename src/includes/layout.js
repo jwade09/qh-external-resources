@@ -12,7 +12,7 @@ const Layout = ({children, side}) => {
                 <aside className="well gutter">
                    {side !== "playbook" ? <NavAssets /> : <Nav />}
                 </aside>
-                <section className="well gutter max">
+                <section className="max">
                     {children}
                 </section>
             </div>

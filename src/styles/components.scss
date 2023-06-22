@@ -7,7 +7,7 @@
     }
 }
 .ais-SearchBox{
-    margin: 5rem 0;
+    
     @media (max-width:$small) {
         margin: 2rem 0;
     }
@@ -17,13 +17,14 @@
     .ais-SearchBox-input{
         padding: 2rem;
         width: 100%;
-        border: solid 1px #f1f1f1;
+        border: solid 1px #ccc;
         border-radius: .5rem;
         font-size: 1.6rem;
         box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
         &:focus-visible{
             outline: none;
             box-shadow: 0 5px 10px 0 rgb(0 0 0 / 30%);
+            border: solid 1px #666;
         }
     }
     .ais-SearchBox-submit{
@@ -116,14 +117,25 @@
                 color: maroon;
             }
         }
-        .cat{
-            padding-bottom: 0.5rem;
+        .cat, .new{
+            margin: 0 1rem 0.5rem 0;
             width: fit-content;
             display: block;
             margin-top: 1rem;
             text-transform: uppercase;
             letter-spacing: 1px;
             font-size: 1rem;
+            padding: .5rem 0;
+        }
+
+        .new {
+            color: #ff003c;
+            background-color: #ffe4ea;
+            padding: .5rem .8rem;
+            border-radius: .5rem;
+        }
+
+        .cat {
             color: #999;
         }
 
@@ -177,6 +189,27 @@
         width: 100%;
         margin: 0 0 3rem 0
     }
+}
+.new{
+    background-color: #f1f1f1;
+    .card:nth-child(3){
+        @media (max-width:$large) {
+            display: none;
+        }
+    }
+    .card:nth-child(3){
+        @media (max-width:$small) {
+            display: block;
+        }
+    }
+}
+.search{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: linear-gradient(180deg, rgba(241,241,241,1) 65%, rgba(0,0,0,0) 100%);
 }
 .res{
     border-radius: 1rem;

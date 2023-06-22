@@ -78,6 +78,9 @@ aside{
         padding-top: 10rem;
         padding-bottom: 10rem;
     }
+    &.bot{
+        padding-bottom: 0;
+    }
     @media (max-width:$medium) {
         padding-top: 2rem;
         padding-bottom: 2rem;
