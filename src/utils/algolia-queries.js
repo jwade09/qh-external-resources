@@ -24,7 +24,7 @@ const videoQuery = `{
         contentDigest
       }
       tags
-      
+      last_publication_date(formatString: "MMMM D, YYYY")
     }
   }
 }`
@@ -52,7 +52,7 @@ const solutionQuery = `{
         contentDigest
       }
       tags
-      
+      last_publication_date(formatString: "MMMM D, YYYY")
     }
   }
 }`
@@ -80,7 +80,7 @@ const ccsQuery = `{
         contentDigest
       }
       tags
-      
+      last_publication_date(formatString: "MMMM D, YYYY")
     }
   }
 }`
@@ -108,7 +108,7 @@ const whitePaperQuery = `{
         contentDigest
       }
       tags
-      
+      last_publication_date(formatString: "MMMM D, YYYY")
     }
   }
 }`
@@ -136,7 +136,7 @@ const webinarsQuery = `{
         contentDigest
       }
       tags
-      
+      last_publication_date(formatString: "MMMM D, YYYY")
     }
   }
 }`
@@ -164,7 +164,7 @@ const caseQuery = `{
         contentDigest
       }
       tags
-      
+      last_publication_date(formatString: "MMMM D, YYYY")
     }
   }
 }`
@@ -192,7 +192,7 @@ const navQuery = `{
         contentDigest
       }
       tags
-      
+      last_publication_date(formatString: "MMMM D, YYYY")
     }
   }
 }`
@@ -220,7 +220,7 @@ const landQuery = `{
         contentDigest
       }
       tags
-      
+      last_publication_date(formatString: "MMMM D, YYYY")
     }
   }
 }`
@@ -248,7 +248,7 @@ const memberQuery = `{
         contentDigest
       }
       tags
-      
+      last_publication_date(formatString: "MMMM D, YYYY")
     }
   }
 }`
