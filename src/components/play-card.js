@@ -17,7 +17,7 @@ const PlayCard = (props) => {
         
                 <div className="card">
                     <div className="card-content">
-                    <div className="flex">
+                    <div className="flex align-center">
                         <div className="cat">{props.cat === "Member Stories" ? "Member Marketing" : (props.cat)}</div>
                         {props.new ? <div className="new">{props.new}</div> : ''}
                     </div>
