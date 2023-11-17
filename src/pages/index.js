@@ -1,6 +1,5 @@
 import * as React from "react"
 import Layout from "../includes/layout"
-import headerImage from "../images/resource-image.png"
 import SearchCard from "../components/search-card"
 import algoliasearch from 'algoliasearch/lite'
 import { InstantSearch, SearchBox, Hits, connectStateResults, Index } from "react-instantsearch-dom"
