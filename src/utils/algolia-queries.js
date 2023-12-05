@@ -196,6 +196,34 @@ const navQuery = `{
     }
   }
 }`
+const colQuery = `{
+  allPrismicVideo(filter: {data: {category: {in: "Collection"}}}) {
+    nodes {
+      data {
+        category
+        description {
+          richText
+          html
+        }
+        resource {
+          url
+        }
+        title {
+          text
+        }
+        date_created(formatString: "MMMM, YYYY")
+        date: date_created(formatString: "X")
+        hide_disclaimer
+      }
+      id
+      internal {
+        contentDigest
+      }
+      tags
+      last_publication_date(formatString: "MMMM D, YYYY")
+    }
+  }
+}`
 const landQuery = `{
   allPrismicVideo(filter: {data: {category: {in: "Landing Pages"}}}) {
     nodes {
@@ -326,6 +354,11 @@ const queries = [
     query: playBookQuery,
     transformer: ({ data }) => data.allPrismicPlaybook.nodes,
     indexName: 'Playbooks',
+  },
+  {
+    query: colQuery,
+    transformer: ({ data }) => data.allPrismicVideo.nodes,
+    indexName: 'Collections',
   },
   ]
 

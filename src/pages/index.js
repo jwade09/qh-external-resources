@@ -91,6 +91,13 @@ const IndexPage = (props) => {
           <section className="well">
           <Results>
           <AllResults>
+            <Index indexName="Collections">
+              <IndexResults>
+              <a className="anchor" id="collections" />
+              <h2 className="search-title">Collections</h2>
+              <Hits hitComponent={SearchCard} />
+              </IndexResults>
+            </Index>
             <Index indexName="Videos">
               <IndexResults>
               <a className="anchor" id="videos" />
@@ -169,7 +176,7 @@ export const Head = () => {
   return(
     <>
       <title>External Resources</title>
-      <script src="https://kit.fontawesome.com/ba4e68cc54.js" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/f56b253192.js" crossorigin="anonymous"></script>
       <meta name="robots" content="noindex"></meta>
     </>
   )
